@@ -18,13 +18,13 @@ export default () => {
     console.log(data);
   }, []);
   return (
-    <div className="w-[1000px]">
-      <Swiper
-        spaceBetween={50}
-        slidesPerView={3}
+    <div className="w-[1200px] ">
+      <Swiper 
+        spaceBetween={10}
+        slidesPerView={6}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
-        className="w-full"
+        className="w-full "
       >
         {data.map((movie) => (
           <div key={movie.id} className="">
